@@ -1,0 +1,24 @@
+{
+  "nodes": {
+    "chef-server": {
+      ":ip": "10.0.0.10",
+      "ports": [],
+      ":memory": 4096,
+      ":bootstrap": "bootstrap-chefserver.sh"
+    },
+
+    "chef-node001": {
+      ":ip": "10.0.0.11",
+      "ports": [],
+      ":memory": 512,
+      ":bootstrap": "bootstrap-chefnode.sh"
+    },
+
+    "chef-workstation": {
+      ":ip": "10.0.0.12",
+      "ports": [],
+      ":memory": 1024,
+      ":bootstrap": "bootstrap-chefworkstation.sh"
+    }
+  }
+}
